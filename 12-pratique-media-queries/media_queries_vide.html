@@ -77,16 +77,53 @@
 				
 				/* quand l'ecran est moins que 800px */
 				@media screen and (max-width: 800px) {
+					#header {
+						background-color: aqua;
+						display: flex;
+						justify-content: flex-start;
+						align-content: flex-start;
+						
+					}
+					#logo {
+						justify-content: flex-end;
+						display: flex;
+						align-content: flex-end;
+
+					}
+
+					#nav {
+					flex: 6%;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+				}
+				
+					#footer {
+						background-color: aqua;
+					}
+					#aside {
+						flex: 20;
+					}
 				}
 
 				/* quand l'ecran est moins que 650px */
 				@media screen and (max-width: 650px) {
+					.mainContenu {
+					flex:80%;
+
+				}
+				#nav {
+					flex:6%;
+					display:flex;
+				}
 				}
 				
 				/* quand l'ecran est moins que 600px */
 				@media screen and (max-width: 600px) {
+					.contenuCacheMoins600px {
+						display: none;
+					}
 				}
-			
 			</style>
 		</head>
 		<body>
