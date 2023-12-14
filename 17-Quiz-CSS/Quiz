@@ -20,31 +20,59 @@
         .page-wrapper{
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            align-items:flex-start ;
+			flex-wrap: wrap-reverse;
+			background-color: gray;
         }
         .intro {
             border-style: solid;
             background-color: black;
             border-radius: 20px;
             color: white;
-            width: 700px;
+            width: 75%;
             height: 450px;
+			order: 2;
+			align-items: flex-start;
+			border-color: black;
         }
         .sidebar {
             border-style:solid;
             background-color: red;
             border-radius: 20px;
             color: white;
-            width:;
+            width:23%;
+			order: 1;
+			border-color: red;
         }
 
         .archives, .select, .resources {
             color: black;
         }
-        .explanation {
+        .explanation, .participation, .benefits, .requirements {
             width:400px;
+			order: 3;
+			align-items: flex-end;
+			flex-direction: column;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: aliceblue;
+			width: 100%;
         }
+		.requirements {
+			color: aliceblue;
+		}
+		h3 {
+			color: black;
+		}
+		footer {
+			background-color: black;
+			border-radius: 20px;
+			padding:5px;
+			display: flex;
+			justify-content: space-around;
+			order: 4;
+		}
+
         
     </style>
 </head>
